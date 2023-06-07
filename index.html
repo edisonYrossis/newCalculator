@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <title>calculator</title>
+    <link rel="shortcut icon" href="img/calculator.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="main-container">
+
+
+
+    <form class="btn-container" name="calculator">   
+        <div class="display" >0</div>
+        <button type="button" onclick="deleteContent()" class="grey delete">←</button>
+        <button type="button" onclick="clearContent()" class="grey clrDisplay">Clr</button>
+        <button type="button"  class="grey operator">+</button>
+        <button type="button"  class="orange num">1</button>
+        <button type="button"  class="orange num">2</button>
+        <button type="button"  class="orange num">3</button>
+        <button type="button"  class="grey operator">-</button>
+
+        <button type="button"  class="orange num">4</button>
+        <button type="button"  class="orange num">5</button>
+        <button type="button"  class="orange num">6</button>
+        <button type="button" class="grey operator">*</button>
+
+
+        <button type="button" class="orange num">7</button>
+        <button type="button" class="orange num">8</button>
+        <button type="button" class="orange num">9</button>
+
+        <button type="button" class="grey operator">%</button>
+        <button type="button" class="grey operator">/</button>
+        <button type="button" class="grey num">.</button>
+        
+        <button type="button" class="grey submit" onclick="resultContent()">=</button>
+</form>
+
+ </div>
+    <script src="main.js"></script>
+</body>
+</html>

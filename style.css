@@ -1,0 +1,87 @@
+body {
+   padding: 0;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: sans-serif;
+   background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 31%, rgba(161,0,255,1) 96%);
+}
+
+.orange {
+    background-color: orange;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #0000005b;
+    width: 350px;
+    height: 450px;
+    border-radius: 13px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+.btn-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 30% 11.5% auto auto auto;
+    grid-template-columns: 22.8% 22.8% 22.8% auto;
+}
+
+.display {
+   grid-column: 1 / -1;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+    text-align: end;
+    font-size: 2.4em;
+    outline: none;
+    background-color: rgba(8, 8, 8, 0.713);
+    color: #ffffffd5;
+    font-weight: bold;
+    padding-right: 15px ;
+    height: 100px; 
+    
+}
+
+.delete {
+    grid-column: 1/ span 2;
+}
+
+.submit {
+    grid-column: 4 / 5;
+    grid-row: 5 / 7;
+}
+
+form button {
+    outline: none;
+    border: black solid 1px;
+    font-size: 1.2em;
+    transition: scale .1.8s;
+    color: #fff;
+    font-weight: bold;
+}
+
+form button:hover
+{   cursor: pointer;
+    background-color: rgb(50, 49, 49);
+    scale: 1.05;
+}
+
+.operator:focus 
+{
+    cursor: pointer;
+    background-color: rgb(50, 49, 49);
+    scale: 1.05;
+}
+
+
